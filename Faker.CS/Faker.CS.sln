@@ -1,0 +1,66 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Faker.CS", "Faker.CS\Faker.CS.csproj", "{F6485900-3940-4FFB-8AB5-4B2470D6944D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Src", "Src", "{55EAED95-1BC7-4475-B4FD-A0C02AE67955}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{EEAF0A40-0F5D-4A5E-BB9D-6FCF5A559414}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{38DB9A97-C316-42BD-8745-1F539ED6C23F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Faker.Core", "Faker.Core\Faker.Core.csproj", "{8467B8ED-02EA-4FFE-9C1F-12B4DC1F9C60}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Faker.Models", "Faker.Models\Faker.Models.csproj", "{77626CB1-F718-4329-8CFD-2FB8B52B2336}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Faker.Helpers", "Faker.Helpers\Faker.Helpers.csproj", "{78B0E0E6-B12B-4A5E-8C51-8660EDE75E4A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApplication1", "ConsoleApplication1\ConsoleApplication1.csproj", "{19D5FE79-35B7-4527-BB8B-7DD98F7EA37B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Faker.Extensions", "Faker.Extensions\Faker.Extensions.csproj", "{ABBD9FB6-34CB-4B38-BC24-5DD6FC447C9D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F6485900-3940-4FFB-8AB5-4B2470D6944D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6485900-3940-4FFB-8AB5-4B2470D6944D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6485900-3940-4FFB-8AB5-4B2470D6944D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6485900-3940-4FFB-8AB5-4B2470D6944D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8467B8ED-02EA-4FFE-9C1F-12B4DC1F9C60}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8467B8ED-02EA-4FFE-9C1F-12B4DC1F9C60}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8467B8ED-02EA-4FFE-9C1F-12B4DC1F9C60}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8467B8ED-02EA-4FFE-9C1F-12B4DC1F9C60}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77626CB1-F718-4329-8CFD-2FB8B52B2336}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77626CB1-F718-4329-8CFD-2FB8B52B2336}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77626CB1-F718-4329-8CFD-2FB8B52B2336}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77626CB1-F718-4329-8CFD-2FB8B52B2336}.Release|Any CPU.Build.0 = Release|Any CPU
+		{78B0E0E6-B12B-4A5E-8C51-8660EDE75E4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78B0E0E6-B12B-4A5E-8C51-8660EDE75E4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78B0E0E6-B12B-4A5E-8C51-8660EDE75E4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78B0E0E6-B12B-4A5E-8C51-8660EDE75E4A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19D5FE79-35B7-4527-BB8B-7DD98F7EA37B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19D5FE79-35B7-4527-BB8B-7DD98F7EA37B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19D5FE79-35B7-4527-BB8B-7DD98F7EA37B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19D5FE79-35B7-4527-BB8B-7DD98F7EA37B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ABBD9FB6-34CB-4B38-BC24-5DD6FC447C9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ABBD9FB6-34CB-4B38-BC24-5DD6FC447C9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ABBD9FB6-34CB-4B38-BC24-5DD6FC447C9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ABBD9FB6-34CB-4B38-BC24-5DD6FC447C9D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{38DB9A97-C316-42BD-8745-1F539ED6C23F} = {55EAED95-1BC7-4475-B4FD-A0C02AE67955}
+		{8467B8ED-02EA-4FFE-9C1F-12B4DC1F9C60} = {38DB9A97-C316-42BD-8745-1F539ED6C23F}
+		{77626CB1-F718-4329-8CFD-2FB8B52B2336} = {38DB9A97-C316-42BD-8745-1F539ED6C23F}
+		{78B0E0E6-B12B-4A5E-8C51-8660EDE75E4A} = {38DB9A97-C316-42BD-8745-1F539ED6C23F}
+		{19D5FE79-35B7-4527-BB8B-7DD98F7EA37B} = {EEAF0A40-0F5D-4A5E-BB9D-6FCF5A559414}
+		{ABBD9FB6-34CB-4B38-BC24-5DD6FC447C9D} = {38DB9A97-C316-42BD-8745-1F539ED6C23F}
+	EndGlobalSection
+EndGlobal
