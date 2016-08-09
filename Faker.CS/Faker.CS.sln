@@ -15,7 +15,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Faker.Core", "Faker.Core\Fa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Faker.Models", "Faker.Models\Faker.Models.csproj", "{77626CB1-F718-4329-8CFD-2FB8B52B2336}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Faker.Helpers", "Faker.Helpers\Faker.Helpers.csproj", "{78B0E0E6-B12B-4A5E-8C51-8660EDE75E4A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Faker.Resources", "Faker.Helpers\Faker.Resources.csproj", "{78B0E0E6-B12B-4A5E-8C51-8660EDE75E4A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApplication1", "ConsoleApplication1\ConsoleApplication1.csproj", "{19D5FE79-35B7-4527-BB8B-7DD98F7EA37B}"
 EndProject

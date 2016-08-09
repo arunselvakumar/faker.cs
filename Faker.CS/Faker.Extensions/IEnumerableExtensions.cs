@@ -8,30 +8,40 @@
 
     public static class IEnumerableExtensions
     {
-        public static Name Random(this IEnumerable<Name> enumerableNames)
+        public static PersonModel Random(this IEnumerable<PersonModel> enumerablePersons)
         {
-            var collection = enumerableNames.ToList();
-            var randomNumber = new Random();
+            var collection = enumerablePersons.ToList();
 
             if (!collection.Any())
             {
                 throw new ArgumentOutOfRangeException();
             }
 
-            return collection[randomNumber.Next(0, collection.Count())];
+            return collection[RandomNumber.Next(0, collection.Count())];
+        }
+
+        public static AddressModel Random(this IEnumerable<AddressModel> enumerableAddresses)
+        {
+            var collection = enumerableAddresses.ToList();
+
+            if (!collection.Any())
+            {
+                throw new ArgumentOutOfRangeException();
+            }
+
+            return collection[RandomNumber.Next(0, collection.Count())];
         }
 
         public static string Random(this IEnumerable<string> enumerableStrings)
         {
             var collection = enumerableStrings.ToList();
-            var randomNumber = new Random();
 
             if (!collection.Any())
             {
                 throw new ArgumentOutOfRangeException();
             }
 
-            return collection[randomNumber.Next(0, collection.Count())];
+            return collection[RandomNumber.Next(0, collection.Count())];
         }
     }
 }

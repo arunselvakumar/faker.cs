@@ -2,7 +2,7 @@
 {
     using Faker.Models.Enums;
 
-    public sealed class Name
+    public sealed class PersonModel
     {
         public string FirstName { get; set; }
 

@@ -12,13 +12,24 @@ namespace ConsoleApplication1
     {
         static void Main(string[] args)
         {
-            var firstName = Faker.Name.FullName();
+            var firstName = Faker.Lorem.Words();
+
             Console.WriteLine(firstName);
 
-            firstName = Faker.Name.FullName(Gender.Male);
+            firstName = Faker.Lorem.Words();
+
             Console.WriteLine(firstName);
 
-            firstName = Faker.Name.FullName(Gender.Female);
+            firstName = Faker.Lorem.Words();
+
+            Console.WriteLine(firstName);
+
+            firstName = Faker.Lorem.Words();
+
+            Console.WriteLine(firstName);
+
+            firstName = Faker.Lorem.Words();
+
             Console.WriteLine(firstName);
 
             Console.ReadLine();

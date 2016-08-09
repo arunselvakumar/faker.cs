@@ -46,20 +46,18 @@
   <ItemGroup>
     <Compile Include="Address.cs" />
     <Compile Include="Internet.cs" />
+    <Compile Include="Lorem.cs" />
     <Compile Include="Name.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Faker.Extensions\Faker.Extensions.csproj">
       <Project>{abbd9fb6-34cb-4b38-bc24-5dd6fc447c9d}</Project>
       <Name>Faker.Extensions</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Faker.Helpers\Faker.Helpers.csproj">
+    <ProjectReference Include="..\Faker.Helpers\Faker.Resources.csproj">
       <Project>{78B0E0E6-B12B-4A5E-8C51-8660EDE75E4A}</Project>
-      <Name>Faker.Helpers</Name>
+      <Name>Faker.Resources</Name>
     </ProjectReference>
     <ProjectReference Include="..\Faker.Models\Faker.Models.csproj">
       <Project>{77626cb1-f718-4329-8cfd-2fb8b52b2336}</Project>
