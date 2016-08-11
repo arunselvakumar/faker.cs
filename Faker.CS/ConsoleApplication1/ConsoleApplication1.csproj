@@ -9,9 +9,10 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>ConsoleApplication1</RootNamespace>
     <AssemblyName>ConsoleApplication1</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -53,10 +54,6 @@
     <ProjectReference Include="..\Faker.Core\Faker.Core.csproj">
       <Project>{8467b8ed-02ea-4ffe-9c1f-12b4dc1f9c60}</Project>
       <Name>Faker.Core</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Faker.Models\Faker.Models.csproj">
-      <Project>{77626CB1-F718-4329-8CFD-2FB8B52B2336}</Project>
-      <Name>Faker.Models</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

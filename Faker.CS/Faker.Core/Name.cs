@@ -5,7 +5,7 @@
     using System.Linq;
 
     using Faker.Extensions;
-    using Faker.Helpers.ResourcesHelper;
+    using Faker.Helpers;
     using Faker.Models;
     using Faker.Models.Enums;
 
@@ -71,19 +71,31 @@
                 case Gender.None:
                     {
                         var name = persons.Random();
+#if NET35
+                        return (name.FirstName + " " + name.LastName);
+#else
                         return string.Join(" ", name.FirstName, name.LastName);
+#endif
                     }
 
                 case Gender.Male:
                     {
                         var name = persons.Where(person => person.Gender == Gender.Male).Random();
+#if NET35
+                        return (name.FirstName + " " + name.LastName);
+#else
                         return string.Join(" ", name.FirstName, name.LastName);
+#endif
                     }
 
                 case Gender.Female:
                     {
                         var name = persons.Where(person => person.Gender == Gender.Female).Random();
+#if NET35
+                        return (name.FirstName + " " + name.LastName);
+#else
                         return string.Join(" ", name.FirstName, name.LastName);
+#endif
                     }
 
                 default:
@@ -101,6 +113,6 @@
             return suffix.Random();
         }
 
-        #endregion
+#endregion
     }
 }

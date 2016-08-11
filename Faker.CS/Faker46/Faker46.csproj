@@ -4,14 +4,13 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{78B0E0E6-B12B-4A5E-8C51-8660EDE75E4A}</ProjectGuid>
+    <ProjectGuid>{ECEA46C4-08CA-4CB9-89E6-BBAC50C98ABD}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Faker.Helpers</RootNamespace>
-    <AssemblyName>Faker.Helpers</AssemblyName>
-    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <RootNamespace>Faker46</RootNamespace>
+    <AssemblyName>Faker46</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -45,17 +44,47 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="..\Faker.Core\Address.cs">
+      <Link>Address.cs</Link>
+    </Compile>
+    <Compile Include="..\Faker.Core\Extensions\EnumerableExtensions.cs">
+      <Link>Extensions\EnumerableExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\Faker.Core\Extensions\RandomNumber.cs">
+      <Link>Extensions\RandomNumber.cs</Link>
+    </Compile>
+    <Compile Include="..\Faker.Core\Helpers\ResourcesHelper.cs">
+      <Link>Helpers\ResourcesHelper.cs</Link>
+    </Compile>
+    <Compile Include="..\Faker.Core\Internet.cs">
+      <Link>Internet.cs</Link>
+    </Compile>
+    <Compile Include="..\Faker.Core\Lorem.cs">
+      <Link>Lorem.cs</Link>
+    </Compile>
+    <Compile Include="..\Faker.Core\Models\AddressModel.cs">
+      <Link>Models\AddressModel.cs</Link>
+    </Compile>
+    <Compile Include="..\Faker.Core\Models\Enums\Gender.cs">
+      <Link>Models\Enums\Gender.cs</Link>
+    </Compile>
+    <Compile Include="..\Faker.Core\Models\PersonModel.cs">
+      <Link>Models\PersonModel.cs</Link>
+    </Compile>
+    <Compile Include="..\Faker.Core\Name.cs">
+      <Link>Name.cs</Link>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Helper\ResourcesHelper.cs" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
+    <None Include="..\Faker.Core\Resources\Addresses.json">
+      <Link>Resources\Addresses.json</Link>
+    </None>
+    <None Include="..\Faker.Core\Resources\Names.json">
+      <Link>Resources\Names.json</Link>
+    </None>
     <None Include="packages.config" />
-    <None Include="Resources\Addresses.json">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Resources\Names.json">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

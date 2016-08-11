@@ -3,7 +3,7 @@
     using System.Collections.Generic;
 
     using Faker.Extensions;
-    using Faker.Helpers.ResourcesHelper;
+    using Faker.Helpers;
     using Faker.Models;
 
     /// <summary>

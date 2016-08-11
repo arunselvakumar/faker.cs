@@ -5,7 +5,7 @@
     using System.Linq;
 
     using Faker.Extensions;
-    using Faker.Helpers.ResourcesHelper;
+    using Faker.Helpers;
     using Faker.Models;
     using Faker.Models.Enums;
 

@@ -9,8 +9,9 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Faker.Core</RootNamespace>
     <AssemblyName>Faker.Core</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -20,6 +21,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -28,6 +30,7 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
@@ -45,24 +48,25 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Address.cs" />
+    <Compile Include="Extensions\EnumerableExtensions.cs" />
+    <Compile Include="Extensions\RandomNumber.cs" />
+    <Compile Include="Helpers\ResourcesHelper.cs" />
     <Compile Include="Internet.cs" />
     <Compile Include="Lorem.cs" />
+    <Compile Include="Models\AddressModel.cs" />
+    <Compile Include="Models\Enums\Gender.cs" />
+    <Compile Include="Models\PersonModel.cs" />
     <Compile Include="Name.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <ProjectReference Include="..\Faker.Extensions\Faker.Extensions.csproj">
-      <Project>{abbd9fb6-34cb-4b38-bc24-5dd6fc447c9d}</Project>
-      <Name>Faker.Extensions</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Faker.Helpers\Faker.Resources.csproj">
-      <Project>{78B0E0E6-B12B-4A5E-8C51-8660EDE75E4A}</Project>
-      <Name>Faker.Resources</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Faker.Models\Faker.Models.csproj">
-      <Project>{77626cb1-f718-4329-8cfd-2fb8b52b2336}</Project>
-      <Name>Faker.Models</Name>
-    </ProjectReference>
+    <None Include="Resources\Addresses.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\Names.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

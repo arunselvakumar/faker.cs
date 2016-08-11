@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace ConsoleApplication1
 {
-    using Faker.Models.Enums;
 
     class Program
     {
         static void Main(string[] args)
         {
+            Faker.Name.FirstName();
             var firstName = Faker.Lorem.Words();
 
             Console.WriteLine(firstName);
